@@ -36,6 +36,7 @@
       <nav>
         <a href="#Experiencia">Experiencia</a>
         <a href="#Proyectos">Proyectos</a>
+        <a href="#Contacto">Contacto</a>
         <a
           href="https://www.github.com/braiso-22"
           target="_blank"
@@ -94,6 +95,101 @@
           </footer>
         </article>
       </section>
+      <section>
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+          <summary>¿Que estudios tienes?</summary>
+          <p>
+            Estudios de grado superior en Inteligencia Artificial y Bigdata,
+            Desarrollo de Aplicaciones Multiplataforma y grado medio en Sistemas
+            Microinformaticos y Redes.
+          </p>
+        </details>
+        <details>
+          <summary>¿Cuales son tus hobbies?</summary>
+          <ul>
+            <li>La música</li>
+            <li>Los videojuegos</li>
+            <li>La lectura</li>
+            <li>Los deportes acuáticos</li>
+            <li>La programación</li>
+          </ul>
+        </details>
+        <details>
+          <summary>¿Cual es tu lenguaje favorito?</summary>
+          <p>
+            Antes era Java, pero ahora dudo entre Kotlin y Python ya que son muy
+            faciles de usar y muy potentes
+          </p>
+        </details>
+      </section>
+      <section>
+        <h2 id="Contacto">Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información personal</legend>
+            <!-- Se puede usar atributo for para no meter el input en el label-->
+            <label>
+              Nombre completo:
+              <input
+                type="text"
+                name="name"
+                placeholder="Nombre Apellido1 Apellido2"
+              />
+            </label>
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Información adicional</legend>
+            <label>
+              Teléfono:
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="600000000"
+                pattern="[0-9]{9}"
+                required
+              />
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <label for="why"> ¿Por que quieres contactar conmigo? </label>
+            <select name="why" id="why">
+              <option value="trabajo">Oferta de trabajo</option>
+              <option value="proyecto">Proyecto</option>
+              <option value="otro">Otro</option>
+            </select>
+
+            <datalist id="tecnologias">
+              <option value="Java"></option>
+              <option value="Python"></option>
+              <option value="Kotlin"></option>
+              <option value="Html"></option>
+              <option value="Javascript"></option>
+              <option value="PHP"></option>
+              <option value="C#"></option>
+            </datalist>
+            <label>
+              ¿Con que tecnologias trabajas?
+              <input list="tecnologias" name="tecnologias" />
+            </label>
+
+            <label>
+              ¿Aceptas los terminos?
+              <input type="checkbox" required />
+            </label>
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
     <footer>
       Derechos reservados &copy; 2023
@@ -101,8 +197,9 @@
       <a
         href="http://web.whatsapp.com/send?text=Holaaa&phone=+prueba"
         target="_blank"
-        >Manda un whatsapp</a
       >
+        Manda un whatsapp
+      </a>
     </footer>
   </body>
 </html>
