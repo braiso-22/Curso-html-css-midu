@@ -46,6 +46,23 @@
         </a>
       </nav>
     </header>
+    <button id="openModal">Abrir ventana modal</button>
+    <dialog id="modal" ><!-- La propiedad open es la que hace se sea visible-->
+      <h2>Esto es una ventana modal</h2>
+      <p>Estamos en html nativo</p>
+      <button id="close">Cerrar</button>
+    </dialog>
+    <script>
+      const openModal = document.getElementById("openModal");
+      const modal = document.getElementById("modal");
+      const close = document.getElementById("close");
+      openModal.addEventListener("click", () => {
+        modal.showModal();
+      });
+      close.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
     <main>
       <p>
         +2 años de experiencia como programador
